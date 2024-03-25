@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= locals.title %>
+    </title>
+    <meta name="description" content="<%= locals.description %>">
+    <script type="text/javascript"></script>
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" >
+
+    <!-- Design fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons core CSS -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Responsive styles for this template -->
+    <!-- <link href="/css/responsive.css" rel="stylesheet"> -->
+
+    <!-- Colors for this template -->
+    <link href="/css/colors.css" rel="stylesheet">
+
+    <!-- Version Garden CSS for this template -->
+    <link href="/css/version/garden.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <%- include('../component/header.ejs') %>
+            <%- body %>
+        <%- include('../component/footer.ejs') %>
+    </div>
+
+    <!-- Core JavaScript
+            ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
