@@ -5,11 +5,11 @@ const connectDB = async () => {
 
     try {
         mongoose.set('strictQuery', false);
-        const conn = await mongoose.connect(process.env.MONGO_URL)
+        const conn = await mongoose.connect(process.env.URI)
         console.log(`Database connect success`);
     } catch (error) {
         console.log(error);
     }
 }
 
-module.exports = connectDB;
+module.exports = connectDB ;

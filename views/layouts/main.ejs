@@ -26,10 +26,6 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="/css/style.css">
 
-
-    <!-- Responsive styles for this template -->
-    <!-- <link href="/css/responsive.css" rel="stylesheet"> -->
-
     <!-- Colors for this template -->
     <link href="/css/colors.css" rel="stylesheet">
 
@@ -39,6 +35,7 @@
 
 <body>
     <div id="wrapper">
+        <%- include('../component/search.ejs') %>
         <%- include('../component/header.ejs') %>
             <%- body %>
         <%- include('../component/footer.ejs') %>
@@ -46,11 +43,10 @@
 
     <!-- Core JavaScript
             ================================================== -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
-
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/custom.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,39 @@
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive pt-3">
+            <table class="table m-0">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% data.forEach(user => { %>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            <%= user.name %>
+                        </td>
+                        <td>
+                            <%= user.email %>
+                        </td>
+                    </tr>
+                    <% }) %>
+                    
+                    
+                </tbody>
+            </table>
+            <p class="pt-4"></p>
+            <% if (nextPage !== null) { %>
+                <p class="btn btn-primary">
+                    <a href="/user/?page=<%= nextPage %>" class="icon-chevrons-right "></a>
+                </p>
+            <% } %>
+        </div>
+
+    </div>
+</div>

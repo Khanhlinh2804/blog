@@ -1,0 +1,93 @@
+<!-- Header start -->
+<header class="header">
+    <!-- Row start -->
+    <div class="row gutters">
+        <div class="col-lg-4 col-sm-6 col-6">
+            <a href="index.html" class="logo">Retail Store</a>
+        </div>
+        <div class="col-lg-8 col-sm-6 col-6">
+            <!-- Header actions start -->
+            <ul class="header-actions">
+                
+                <li class="dropdown">
+                    <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
+                        <span class="user-name">Nathan James</span>
+                        <span class="avatar">NJ<span class="status busy"></span></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userSettings">
+                        <div class="header-profile-actions">
+                            <div class="header-user-profile">
+                                <div class="header-user">
+                                    <img src="img/user.png" alt="Free Dashboards" />
+                                </div>
+                                <h5>Nathan James</h5>
+                                <p>Balance - $35,000</p>
+                            </div>
+                            <a href=""><i class="icon-user1"></i> My Profile</a>
+                            <form action="/logout" method="post" style="border: none;">
+                                <button type="submit"><i class="icon-log-out1"></i> Sign Out</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- Header actions end -->
+        </div>
+    </div>
+    <!-- Row end -->
+</header>
+<!-- Header end -->
+
+<!-- Navigation start -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#retailAdminNavbar"
+        aria-controls="retailAdminNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </button>
+    <div class="collapse navbar-collapse" id="retailAdminNavbar">
+        <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard">
+                    <i class="icon-devices_other nav-icon"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/blog" id="appsDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="icon-camera2 nav-icon"></i>
+                    Blog
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="appsDropdown">
+                    <li>
+                        <a class="dropdown-item" href="/blog">Lisst Blog</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="/Add-post">Add Blog</a>
+                    </li>
+                </ul>
+            </li>
+            
+           
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="graphsDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="icon-user nav-icon"></i>
+                    User
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="graphsDropdown">
+                    <li>
+                        <a class="dropdown-item" href="/user">Lisst User</a>
+                    </li>
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Navigation end -->
+

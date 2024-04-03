@@ -1,0 +1,56 @@
+<div class="card">
+    <div class="card-body">
+        <a href="/add-post" class="btn btn-success">Add new + </a>
+        <div class="table-responsive pt-3">
+            <table class="table m-0">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Time</th>
+                        <th>Author</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% data.forEach(post=> { %>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                <%= post.name %>
+                            </td>
+                            <td>
+                                <img src="/<%= post.image %>" alt="" width="100px" height="150px">
+                            </td>
+                            <td>
+                                <%= post.createAt.toDateString(); %>
+                            </td>
+                            <td>
+                                <%= post.author %>
+                            </td>
+                            <td>
+                                <a href="/blog/<%= post._id %>" class="btn btn-warning btn-sm">
+                                    <i class="icon-visibility"></i>
+                                </a>
+                                <a href="/edit-blog/<%= post._id %>" class="btn btn-success btn-sm">
+                                    <i class="icon-border_color"></i>
+                                </a>
+
+                                <form action="/delete-blog/<%= post._id %>?_method=DELETE" method="post">
+                                    <button type="submit" class="btn-danger btn">
+                                        <i class="icon-close"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <% }) %>
+                </tbody>
+            </table>
+            
+        </div>
+
+    </div>
+</div>

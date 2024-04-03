@@ -1,0 +1,153 @@
+<section class="section first-section">
+    <div class="container-fluid">
+        <div class="masonry-blog clearfix">
+            <img class="img"
+                src="https://cdn11.bigcommerce.com/s-ixtrkzisub/product_images/uploaded_images/banner-plant-trees.jpg"
+                alt="" srcset="">
+        </div><!-- end masonry -->
+    </div>
+</section>
+<section class="section wb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                <div class="page-wrapper">
+                    <h3>Search Results</h3>
+                    <div class="blog-list clearfix">
+                        <% data.forEach( post=> { %>
+                            <div class="blog-box row">
+                                <div class="col-md-4">
+                                    <div class="post-media">
+                                        <a href="" title="">
+                                            <img src="/<%= post.image  %>" alt="" class="img-fluid">
+                                            <div class="hovereffect"></div>
+                                        </a>
+                                    </div><!-- end media -->
+                                </div><!-- end col -->
+                                <div class="blog-meta big-meta col-md-8">
+                                    <span class="bg-aqua">
+                                        <a href="garden-category.html" title=""> Status</a>
+                                    </span>
+                                    <h4>
+                                        <a href="/post/<%= post._id %>" title="">
+                                            <%= post.name %>
+                                        </a>
+                                    </h4>
+                                    
+                                    <small>
+                                        <a href=" title=">
+                                            <svg xmlns=" http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1" />
+                                            </svg>
+                                            1887
+                                        </a>
+                                    </small>
+                                    <small>
+                                        <a href="garden-single.html" title="">
+                                            <%= post.createAt.toDateString() %>
+                                        </a>
+                                    </small>
+                                    <small>
+                                        <a href="#" title="">
+                                            <%= post.author %>
+                                        </a>
+                                    </small>
+                                </div><!-- end meta -->
+                            </div><!-- end blog-box -->
+                            <% }) %>
+                                <hr class="invis">
+                    </div><!-- end blog-list -->
+                </div><!-- end page-wrapper -->
+
+                <!-- end row -->
+            </div><!-- end col -->
+
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <div class="sidebar">
+                    <div class="widget">
+                        <h2 class="widget-title">Search</h2>
+                        <form class="form-inline search-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search on the site">
+                            </div>
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div><!-- end widget -->
+
+                    <div class="widget">
+                        <h2 class="widget-title">Recent Posts</h2>
+                        <div class="blog-list-widget">
+                            <div class="list-group">
+                                <a href="garden-single.html"
+                                    class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="w-100 justify-content-between">
+                                        <img src="upload/garden_sq_09.jpg" alt="" class="img-fluid float-left">
+                                        <h5 class="mb-1">5 Beautiful buildings you need to before dying</h5>
+                                        <small>12 Jan, 2016</small>
+                                    </div>
+                                </a>
+
+                                <a href="garden-single.html"
+                                    class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="w-100 justify-content-between">
+                                        <img src="upload/garden_sq_06.jpg" alt="" class="img-fluid float-left">
+                                        <h5 class="mb-1">Let's make an introduction for creative life</h5>
+                                        <small>11 Jan, 2016</small>
+                                    </div>
+                                </a>
+
+                                <a href="garden-single.html"
+                                    class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="w-100 last-item justify-content-between">
+                                        <img src="upload/garden_sq_02.jpg" alt="" class="img-fluid float-left">
+                                        <h5 class="mb-1">Did you see the most beautiful sea in the world?</h5>
+                                        <small>07 Jan, 2016</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!-- end blog-list -->
+                    </div><!-- end widget -->
+
+                    <div class="widget">
+                        <h2 class="widget-title">Advertising</h2>
+                        <div class="banner-spot clearfix">
+                            <div class="banner-img">
+                                <img src="upload/banner_04.jpg" alt="" class="img-fluid">
+                            </div><!-- end banner-img -->
+                        </div><!-- end banner -->
+                    </div><!-- end widget -->
+
+                    <div class="widget">
+                        <h2 class="widget-title">Instagram Feed</h2>
+                        <div class="instagram-wrapper clearfix">
+                            <a href="#"><img src="upload/garden_sq_01.jpg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="upload/garden_sq_02.jpg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="upload/garden_sq_03.jpg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="upload/garden_sq_04.jpg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="upload/garden_sq_05.jpg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="upload/garden_sq_06.jpg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="upload/garden_sq_07.jpg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="upload/garden_sq_08.jpg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="upload/garden_sq_09.jpg" alt="" class="img-fluid"></a>
+                        </div><!-- end Instagram wrapper -->
+                    </div><!-- end widget -->
+
+                    <div class="widget">
+                        <h2 class="widget-title">Popular Categories</h2>
+                        <div class="link-widget">
+                            <ul>
+                                <li><a href="#">Gardening <span>(21)</span></a></li>
+                                <li><a href="#">Outdoor Living <span>(15)</span></a></li>
+                                <li><a href="#">Indoor Living <span>(31)</span></a></li>
+                                <li><a href="#">Shopping Guides <span>(22)</span></a></li>
+                                <li><a href="#">Pool Design <span>(66)</span></a></li>
+                            </ul>
+                        </div><!-- end link-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end sidebar -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>

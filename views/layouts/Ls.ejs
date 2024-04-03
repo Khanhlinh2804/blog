@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Marketplace for Bootstrap Admin Dashboards" />
+    <meta name="author" content="Bootstrap Gallery" />
+    <link rel="canonical" href="https://www.bootstrap.gallery/">
+    <meta property="og:url" content="https://www.bootstrap.gallery">
+    <meta property="og:title" content="Admin Templates - Dashboard Templates | Bootstrap Gallery">
+    <meta property="og:description" content="Marketplace for Bootstrap Admin Dashboards">
+    <meta property="og:type" content="Website">
+    <meta property="og:site_name" content="Bootstrap Gallery">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+
+    <!-- *************
+			************ Common Css Files *************
+			************ -->
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="/backend/css/bootstrap.min.css">
+
+    <!-- Icomoon Font Icons css -->
+    <link rel="stylesheet" type="text/css" href="/backend/fonts/style.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="/backend/css/main.css">
+    <!-- *************
+			************ Vendor Css Files *************
+			************ -->
+    <!-- Datepickers css -->
+    <link rel="stylesheet" href="/backend/vendor/daterange/daterange.css" />
+
+    <!-- Summernote CSS -->
+    <link rel="stylesheet" href="/backend/vendor/summernote/summernote-bs4.css" />
+
+    
+
+
+</head>
+
+<body class="authentication">
+    <div class="container">
+        <%- body %>
+    </div>
+
+    <!-- *************
+				************ Required JavaScript Files *************
+			************* -->
+    <!-- Required jQuery first, then Bootstrap Bundle JS -->
+    <script src="/backend/js/jquery.min.js"></script>
+    <script src="/backend/js/bootstrap.bundle.min.js"></script>
+    <script src="/backend/js/moment.js"></script>
+
+
+    <!-- *************
+		<!-- Daterange -->
+    <script src="/backend/vendor/daterange/daterange.js"></script>
+
+    <!-- Summernote JS -->
+    <script src="/backend/vendor/summernote/summernote-bs4.js"></script>
+    <!-- Daterange -->
+
+
+    <!-- Data Tables -->
+    <script src="/backend/vendor/datatables/dataTables.min.js"></script>
+    <script src="/backend/vendor/datatables/dataTables.bootstrap.min.js"></script>
+
+
+    <!-- Main Js Required -->
+    <script src="/backend/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.summernote').summernote({
+                height: 300,
+                tabsize: 2
+            });
+        });
+    </script>
+
+</body>
+
+</html>
